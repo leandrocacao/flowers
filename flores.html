@@ -19,32 +19,18 @@
             overflow: hidden; /* Evita el desbordamiento del contenido */
         }
 
-        h1 {
-    color: #fff; /* Blanco para el texto del título */
-    font-size: 2em;
-    margin: 20px 0; /* Espacio arriba y abajo del título */
-    text-align: center; /* Centra el texto horizontalmente */
-    position: absolute; /* Posiciona el título de forma absoluta */
-    top: 20px; /* Espacio desde el borde superior del contenedor */
-    left: 50%; /* Posiciona el título en el centro horizontalmente */
-    transform: translateX(-50%); /* Ajusta el título para que esté realmente centrado */
-    z-index: 1; /* Asegura que el título esté sobre otros elementos */
-    width: 100%; /* Asegura que el título ocupe el ancho completo del contenedor */
-
-    /* Animación */
-    animation: slideDown 2s ease-out; /* Llama a la animación definida más abajo */
-}
-
-@keyframes slideDown {
-    from {
-        opacity: 0; /* Empieza invisible */
-        transform: translateY(-50px); /* Empieza 50px arriba del lugar final */
-    }
-    to {
-        opacity: 1; /* Termina visible */
-        transform: translateY(0); /* Termina en la posición final */
-    }
-}
+            h1 {
+            color: #fff; /* Blanco para el texto del título */
+            font-size: 2em;
+            margin: 20px 0; /* Espacio arriba y abajo del título */
+            text-align: center; /* Centra el texto horizontalmente */
+            position: absolute; /* Posiciona el título de forma absoluta */
+            top: 20px; /* Espacio desde el borde superior del contenedor */
+            left: 50%; /* Posiciona el título en el centro horizontalmente */
+            transform: translateX(-50%); /* Ajusta el título para que esté realmente centrado */
+            z-index: 1; /* Asegura que el título esté sobre otros elementos */
+            width: 100%; /* Asegura que el título ocupe el ancho completo del contenedor */
+        }
 
 
     </style>
