@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>Melania</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #e0f7fa; /* Azul muy claro */
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .greetings {
+            margin-top: 50px;
+            font-family: 'Georgia', serif;
+            font-size: 2.5em;
+            color: #00796b; /* Verde oscuro */
+            letter-spacing: 2px;
+            display: inline-block;
+            white-space: nowrap;
+        }
+
+        .greetings span {
+            display: inline-block;
+            opacity: 0;
+            animation: fadeInUp 1s forwards; /* Animación de desvanecimiento con subida */
+        }
+
+        .greetings span:nth-child(1) { animation-delay: 0s; }
+        .greetings span:nth-child(2) { animation-delay: 0.1s; }
+        .greetings span:nth-child(3) { animation-delay: 0.2s; }
+        .greetings span:nth-child(4) { animation-delay: 0.3s; }
+        .greetings span:nth-child(5) { animation-delay: 0.4s; }
+        .greetings span:nth-child(6) { animation-delay: 0.5s; }
+        .greetings span:nth-child(7) { animation-delay: 0.6s; }
+        .greetings span:nth-child(8) { animation-delay: 0.7s; }
+        .greetings span:nth-child(9) { animation-delay: 0.8s; }
+        .greetings span:nth-child(10) { animation-delay: 0.9s; }
+        .greetings span:nth-child(11) { animation-delay: 1s; }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .description {
+            margin: 20px auto;
+            font-size: 1.2em;
+            color: #004d40; /* Verde oscuro */
+            max-width: 600px;
+        }
+
+        .button {
+            margin-top: 20px;
+        }
+
+        .botones {
+            background: #80deea; /* Azul claro */
+            border: none;
+            border-radius: 25px;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease; /* Añadida transición de transformación */
+            animation: pulse 1.5s infinite; /* Animación de pulso */
+        }
+
+        .botones a {
+            color: #004d40; /* Verde oscuro para el texto */
+            text-decoration: none;
+            display: block; /* Asegura que el enlace ocupe todo el botón */
+        }
+
+        .botones:hover {
+            background: #4dd0e1; /* Azul más intenso */
+            transform: scale(1.05); /* Efecto de escala */
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        /* Media Queries para dispositivos móviles */
+
+        @media (max-width: 768px) {
+            .greetings {
+                font-size: 2em;
+                margin-top: 30px;
+            }
+
+            .description {
+                font-size: 1em;
+                margin: 10px auto;
+            }
+
+            .botones {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .greetings {
+                font-size: 1.5em;
+                margin-top: 20px;
+            }
+
+            .description {
+                font-size: 0.9em;
+                margin: 5px auto;
+            }
+
+            .botones {
+                padding: 8px 15px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="greetings">
+        <span>¡</span>
+        <span>H</span>
+        <span>o</span>
+        <span>l</span>
+        <span>a</span>
+        <span> </span> <!-- Espacio -->
+        <span>M</span>
+        <span>e</span>
+        <span>l</span>
+        <span>a</span>
+        <span>n</span>
+        <span>i</span>
+        <span>a</span>
+        <span>!</span>
+    </div>
+
+    <div class="description">
+        <p>Bienvenida a tu rincón de flores, donde cada detalle está inspirado y pensado para ti.</p>
+    </div>
+    <div class="button">
+        <button class="botones">
+            <a href="flower.html">¡Presiona aquí para la sorpresa!</a>
+        </button>
+    </div>
+</body>
+
+</html>
